@@ -9,8 +9,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              Pixel Perfect
-              <i class='fas fa-jedi' />
+              Pixel Perfect            
             </Link>
           </div>
           <small class='website-rights'>Pixel Perfect © 2020</small>
