@@ -4,27 +4,27 @@ import MainCardItem from "./MainCardItem";
 import BeforeAfter from "./BeforeAfter";
 const ImgData = [
   {
-    url: "images/SingleExposure-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/SingleExposure-min.jpg",
     text: "Single Exposure",
   },
   {
-    url: "images/LightsOn-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/LightsOn-min.jpg",
     text: "Lights On",
   },
   {
-    url: "images/ItemRemoval-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval-min.jpg",
     text: "Item Removal",
   },
   {
-    url: "images/HDR-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR-min.jpg",
     text: "HDR",
   },
   {
-    url: "images/DayToDusk-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk-min.jpg",
     text: "Day to Dusk",
   },
   {
-    url: "images/ColorChange-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ColorChange-min.jpg",
     text: "Color Change",
   },
 ];
@@ -35,20 +35,20 @@ const befAftImage = {
     before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Color/Before-min.jpeg",
   },
   dayToDusk: {
-    after: "images/DayToDusk/After-min.jpg",
-    before: "images/DayToDusk/Before-min.jpg",
+    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk/After-min.jpg",
+    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk/Before-min.jpg",
   },
   hdr: {
-    after: "images/HDR/After-min.jpg",
-    before: "images/HDR/Before-min.jpg",
+    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR/After-min.jpg",
+    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR/Before-min.jpg",
   },
   itemRemoval: {
-    after: "images/ItemRemoval/After-min.jpg",
-    before: "images/ItemRemoval/Before-min.jpeg",
+    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval/After-min.jpg",
+    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval/Before-min.jpeg",
   },
   lights: {
-    after: "images/Lights/After-min.jpg",
-    before: "images/Lights/Before-min.jpeg",
+    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Lights/After-min.jpg",
+    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Lights/Before-min.jpeg",
   },
 };
 
