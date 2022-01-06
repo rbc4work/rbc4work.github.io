@@ -31,8 +31,8 @@ const ImgData = [
 
 const befAftImage = {
   color: {
-    after: "images/Color/After-min.jpg",
-    before: "images/Color/Before-min.jpeg",
+    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Color/After-min.jpg",
+    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Color/Before-min.jpeg",
   },
   dayToDusk: {
     after: "images/DayToDusk/After-min.jpg",
