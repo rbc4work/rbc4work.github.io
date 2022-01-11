@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Cards.css";
 import MainCardItem from "./MainCardItem";
 import BeforeAfter from "./BeforeAfter";
+import Collective from "./Collective";
 const ImgData = [
   {
     url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/SingleExposure-min.jpg",
@@ -31,24 +32,34 @@ const ImgData = [
 
 const befAftImage = {
   color: {
-    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Color/After-min.jpg",
-    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Color/Before-min.jpeg",
+    after:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Color/After-min.jpg",
+    before:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Color/Before-min.jpeg",
   },
   dayToDusk: {
-    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk/After-min.jpg",
-    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk/Before-min.jpg",
+    after:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk/After-min.jpg",
+    before:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk/Before-min.jpg",
   },
   hdr: {
-    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR/After-min.jpg",
-    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR/Before-min.jpg",
+    after:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR/After-min.jpg",
+    before:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR/Before-min.jpg",
   },
   itemRemoval: {
-    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval/After-min.jpg",
-    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval/Before-min.jpeg",
+    after:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval/After-min.jpg",
+    before:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval/Before-min.jpeg",
   },
   lights: {
-    after: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Lights/After-min.jpg",
-    before: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Lights/Before-min.jpeg",
+    after:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Lights/After-min.jpg",
+    before:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Lights/Before-min.jpeg",
   },
 };
 
@@ -89,7 +100,6 @@ class Cards extends React.Component {
                 src={this.state.images[this.state.currentImage].url}
                 text={this.state.images[this.state.currentImage].text}
                 label="Editing"
-                path="/pricing"
               />
             </ul>
           </div>
@@ -97,8 +107,11 @@ class Cards extends React.Component {
         <div>
           <h1>Before and After</h1>
         </div>
+
         <div className="cards__container_BAF">
           <div className="cards__wrapper_BAF">
+            <h2>Color Changes</h2>
+            <br />
             <ul className="cards__items_BAF">
               <BeforeAfter
                 after={befAftImage.color.after}
@@ -106,6 +119,8 @@ class Cards extends React.Component {
                 label="Color Change"
               />
             </ul>
+            <h2>Day To Dusk</h2>
+            <br />
             <ul className="cards__items_BAF">
               <BeforeAfter
                 after={befAftImage.dayToDusk.after}
@@ -113,6 +128,8 @@ class Cards extends React.Component {
                 label="DayToDusk"
               />
             </ul>
+            <h2>HDR</h2>
+            <br />
             <ul className="cards__items_BAF">
               <BeforeAfter
                 after={befAftImage.hdr.after}
@@ -120,6 +137,8 @@ class Cards extends React.Component {
                 label="HDR"
               />
             </ul>
+            <h2>Item Removal</h2>
+            <br />
             <ul className="cards__items_BAF">
               <BeforeAfter
                 after={befAftImage.itemRemoval.after}
@@ -127,11 +146,27 @@ class Cards extends React.Component {
                 label="ItemRemoval"
               />
             </ul>
+            <h2>Lights On</h2>
+            <br />
             <ul className="cards__items_BAF">
               <BeforeAfter
                 after={befAftImage.lights.after}
                 before={befAftImage.lights.before}
                 label="Lights"
+              />
+            </ul>
+          </div>
+        </div>
+        <div className="cards__container">
+          <div className="cards__wrapper">
+            <h2>HDR</h2>
+            <br />
+            <ul className="cards__items">
+              <Collective
+                src={
+                  "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/CollectiveHDR.jpg"
+                }
+                label="Collective"
               />
             </ul>
           </div>

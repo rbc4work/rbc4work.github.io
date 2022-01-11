@@ -7,6 +7,11 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: left;
+  padding-left: 15px;
+}
+
 .cards__container {
   display: flex;
   flex-flow: column;
@@ -133,8 +138,9 @@ h1 {
 
 .cards__item__text {
   color: #252e48;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 24px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1200px) {
