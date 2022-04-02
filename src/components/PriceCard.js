@@ -3,12 +3,19 @@ import CardItem from "./CardItem";
 import TextItem from "./Text";
 
 const PricingImg = {
-  SingleExposure: "images/SingleExposure-min.jpg",
-  LightsOn: "images/LightsOn-min.jpg",
-  ItemRemoval: "images/ItemRemoval-min.jpg",
-  HDR: "images/HDR-min.jpg",
-  DayToDusk: "images/DayToDusk-min.jpg",
-  ColorChange: "images/ColorChange-min.jpg",
+  SingleExposure:
+    "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/SingleExposure-min.jpg",
+  LightsOn:
+    "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/LightsOn-min.jpg",
+  ItemRemoval:
+    "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/ItemRemoval-min.jpg",
+  HDR: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/HDR-min.jpg",
+  DayToDusk:
+    "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/DayToDusk-min.jpg",
+  ColorChange:
+    "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/ColorChange-min.jpg",
+  Threesixty:
+    "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/360-min.jpg",
 };
 
 function PriceCard(props) {
@@ -21,7 +28,7 @@ function PriceCard(props) {
           desc={
             "Ideal for real estate photo editing so you can put up you listing with a top-grade, retouched professional looking photographs."
           }
-          price={"US $ 1.50 / IMAGE"}
+          price={"US $ 1.50 - 2 / IMAGE"}
         />
       </ul>
       <ul className="cards__items_pricing">
@@ -31,7 +38,15 @@ function PriceCard(props) {
           desc={
             "Our photo retouch service turns your dull exterior property photo to  a beautiful dusk setting by replacing the sky that gives you the feel of sunset."
           }
-          price={"US $ 3.00 / IMAGE"}
+          price={"US $ 2 - 4 / IMAGE"}
+        />
+      </ul>
+      <ul className="cards__items_pricing">
+        <CardItem src={PricingImg.SingleExposure} />
+        <TextItem
+          header={"Single Exposure"}
+          desc={"Single Exposure"}
+          price={"US $ 0.8 - 1.2 / IMAGE"}
         />
       </ul>
       <ul className="cards__items_pricing">
@@ -39,9 +54,9 @@ function PriceCard(props) {
         <TextItem
           header={"ITEM REMOVAL"}
           desc={
-            "Our photo editing team cam remove unnecessary objects out from you photos."
+            "Our photo editing team can remove unnecessary objects out from you photos."
           }
-          price={"US $ 3.00 - $ 6.00 / IMAGE"}
+          price={"US $ 5 - $ 6 / IMAGE"}
         />
       </ul>
       <ul className="cards__items_pricing">
@@ -49,10 +64,24 @@ function PriceCard(props) {
         <TextItem
           header={"Lights On"}
           desc={
-            "Here in Editing Factory we can enhance your portrait photos, remove fine lines to have cleaner portraits for your corporate photos."
+            "Here in Pixel Perfect we can enhance your portrait photos, remove fine lines to have cleaner portraits for your corporate photos."
           }
-          price={"US $ 2.00 / IMAGE"}
+          price={"US $ 0.5 - 0.8 / IMAGE"}
         />
+      </ul>
+      <ul className="cards__items_pricing">
+        <CardItem src={PricingImg.ColorChange} />
+        <TextItem
+          header={"Color Change"}
+          desc={
+            "Our photo editing team can change interior object colors for your indoor photos."
+          }
+          price={"US $ 1 - 1.5 / IMAGE"}
+        />
+      </ul>
+      <ul className="cards__items_pricing">
+        <CardItem src={PricingImg.Threesixty} />
+        <TextItem header={"360°"} desc={"360°"} price={"US $ 3 - 4 / IMAGE"} />
       </ul>
     </div>
   );

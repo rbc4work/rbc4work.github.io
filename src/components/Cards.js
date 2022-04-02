@@ -5,61 +5,79 @@ import BeforeAfter from "./BeforeAfter";
 import Collective from "./Collective";
 const ImgData = [
   {
-    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/SingleExposure-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/SingleExposure-min.jpg",
     text: "Single Exposure",
   },
   {
-    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/LightsOn-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/LightsOn-min.jpg",
     text: "Lights On",
   },
   {
-    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/ItemRemoval-min.jpg",
     text: "Item Removal",
   },
   {
-    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/HDR-min.jpg",
     text: "HDR",
   },
   {
-    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/DayToDusk-min.jpg",
     text: "Day to Dusk",
   },
   {
-    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ColorChange-min.jpg",
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/ColorChange-min.jpg",
     text: "Color Change",
+  },
+  {
+    url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/360-min.jpg",
+    text: "360°",
   },
 ];
 
 const befAftImage = {
   color: {
     after:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Color/After-min.jpg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/Color/After-min.jpg",
     before:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Color/Before-min.jpeg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/Color/Before-min.jpeg",
   },
   dayToDusk: {
     after:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk/After-min.jpg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/DayToDusk/After-min.jpg",
     before:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/DayToDusk/Before-min.jpg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/DayToDusk/Before-min.jpg",
   },
   hdr: {
     after:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR/After-min.jpg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/HDR/After-min.jpg",
     before:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/HDR/Before-min.jpg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/HDR/Before-min.jpg",
+    after2:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/HDR/After_2-min.jpg",
+    before2:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/HDR/Before_2-min.jpg",
   },
   itemRemoval: {
     after:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval/After-min.jpg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/ItemRemoval/After-min.jpg",
     before:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/ItemRemoval/Before-min.jpeg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/ItemRemoval/Before-min.jpeg",
   },
   lights: {
     after:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Lights/After-min.jpg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/Lights/After-min.jpg",
     before:
-      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Lights/Before-min.jpeg",
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/Lights/Before-min.jpeg",
+  },
+  Threesixty: {
+    after:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/360/After-min.jpg",
+    before:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/360/Before-min.jpg",
+    after2:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/360/After_2-min.jpg",
+    before2:
+      "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/BF-AF/360/Before_2-min.jpg",
   },
 };
 
@@ -128,15 +146,6 @@ class Cards extends React.Component {
                 label="DayToDusk"
               />
             </ul>
-            <h2>HDR</h2>
-            <br />
-            <ul className="cards__items_BAF">
-              <BeforeAfter
-                after={befAftImage.hdr.after}
-                before={befAftImage.hdr.before}
-                label="HDR"
-              />
-            </ul>
             <h2>Item Removal</h2>
             <br />
             <ul className="cards__items_BAF">
@@ -155,18 +164,36 @@ class Cards extends React.Component {
                 label="Lights"
               />
             </ul>
-          </div>
-        </div>
-        <div className="cards__container">
-          <div className="cards__wrapper">
+            <h2>360°</h2>
+            <br />
+            <ul className="cards__items_BAF">
+              <BeforeAfter
+                after={befAftImage.Threesixty.after}
+                before={befAftImage.Threesixty.before}
+                label="360"
+              />
+            </ul>
+            <ul className="cards__items_BAF">
+              <BeforeAfter
+                after={befAftImage.Threesixty.after2}
+                before={befAftImage.Threesixty.before2}
+                label="360"
+              />
+            </ul>
             <h2>HDR</h2>
             <br />
-            <ul className="cards__items">
-              <Collective
-                src={
-                  "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/CollectiveHDR.jpg"
-                }
-                label="Collective"
+            <ul className="cards__items_BAF">
+              <BeforeAfter
+                after={befAftImage.hdr.after}
+                before={befAftImage.hdr.before}
+                label="HDR"
+              />
+            </ul>
+            <ul className="cards__items_BAF">
+              <BeforeAfter
+                after={befAftImage.hdr.after2}
+                before={befAftImage.hdr.before2}
+                label="HDR"
               />
             </ul>
           </div>

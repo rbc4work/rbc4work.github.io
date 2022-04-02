@@ -11,10 +11,10 @@ function BeforeAfter(props) {
       <li className="cards__item">
         <ReactCompareSlider
           itemOne={
-            <ReactCompareSliderImage src={props.after} alt="Image one" />
+            <ReactCompareSliderImage src={props.before} alt="Image one" />
           }
           itemTwo={
-            <ReactCompareSliderImage src={props.before} alt="Image two" />
+            <ReactCompareSliderImage src={props.after} alt="Image two" />
           }
         />
       </li>
