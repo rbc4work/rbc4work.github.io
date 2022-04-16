@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Cards.css";
 import MainCardItem from "./MainCardItem";
 import BeforeAfter from "./BeforeAfter";
-import Collective from "./Collective";
 const ImgData = [
   {
     url: "https://pixelperfectimage.s3.ap-south-1.amazonaws.com/images/Mainscreen/SingleExposure-min.jpg",

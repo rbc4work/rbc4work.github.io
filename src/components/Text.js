@@ -7,9 +7,9 @@ function TextItem(props) {
       <li className="cards__item_text">
         <h2>{props.header}</h2>
         <br />
-        <h3 >{props.desc}</h3>
+        <h2>{props.desc}</h2>
         <br />
-        <p>{props.price}</p>
+        <h2>{props.price}</h2>
       </li>
     </>
   );

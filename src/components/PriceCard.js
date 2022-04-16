@@ -28,7 +28,7 @@ function PriceCard(props) {
           desc={
             "Ideal for real estate photo editing so you can put up you listing with a top-grade, retouched professional looking photographs."
           }
-          price={"US $ 1.50 - 2 / IMAGE"}
+          price={"US $ 1.50 / IMAGE"}
         />
       </ul>
       <ul className="cards__items_pricing">
@@ -36,17 +36,19 @@ function PriceCard(props) {
         <TextItem
           header={"DAY TO DUSK"}
           desc={
-            "Our photo retouch service turns your dull exterior property photo to  a beautiful dusk setting by replacing the sky that gives you the feel of sunset."
+            "Our photo retouch service turns your dull exterior property photo to a beautiful dusk setting by replacing the sky that gives you the feel of sunset."
           }
-          price={"US $ 2 - 4 / IMAGE"}
+          price={"US $ 3/ IMAGE"}
         />
       </ul>
       <ul className="cards__items_pricing">
         <CardItem src={PricingImg.SingleExposure} />
         <TextItem
           header={"Single Exposure"}
-          desc={"Single Exposure"}
-          price={"US $ 0.8 - 1.2 / IMAGE"}
+          desc={
+            "Our team of professional editors work on series of images simultaneously to provide the best image with proper colors and tones"
+          }
+          price={"US $ 1 / IMAGE"}
         />
       </ul>
       <ul className="cards__items_pricing">
@@ -54,9 +56,9 @@ function PriceCard(props) {
         <TextItem
           header={"ITEM REMOVAL"}
           desc={
-            "Our photo editing team can remove unnecessary objects out from you photos."
+            "Our photo editing team can remove unnecessary objects out from your photos."
           }
-          price={"US $ 5 - $ 6 / IMAGE"}
+          price={"US $ 5 / IMAGE"}
         />
       </ul>
       <ul className="cards__items_pricing">
@@ -76,12 +78,16 @@ function PriceCard(props) {
           desc={
             "Our photo editing team can change interior object colors for your indoor photos."
           }
-          price={"US $ 1 - 1.5 / IMAGE"}
+          price={"US $ 1.50 / IMAGE"}
         />
       </ul>
       <ul className="cards__items_pricing">
         <CardItem src={PricingImg.Threesixty} />
-        <TextItem header={"360°"} desc={"360°"} price={"US $ 3 - 4 / IMAGE"} />
+        <TextItem
+          header={"360°"}
+          desc={"Removal of tripod and image enhancement"}
+          price={"US $ 3 / IMAGE"}
+        />
       </ul>
     </div>
   );
