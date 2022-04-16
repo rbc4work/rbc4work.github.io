@@ -38,6 +38,8 @@ export default function About() {
             <br />
             <h3>Pixel Perfect</h3>
             <h3> Moghalrajapuram, Vijayawada 520010</h3>
+            <br />
+            <h3>Contact Number: +91 8555034492 / +91 9704442400</h3>
           </li>
         </ul>
       </div>
