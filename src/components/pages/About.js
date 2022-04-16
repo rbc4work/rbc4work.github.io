@@ -29,10 +29,22 @@ export default function About() {
                 delve deep into the work process to find out the best solutions
                 for our clients.
               </h2>
+              <br />
+              <br />
+              <br />
+              <h2>Address:</h2>
+              <br />
+              <h3>Pixel Perfect</h3>
+              <h3> Moghalrajapuram, Vijayawada 520010</h3>
+              <br />
+              <h2>Contact Number:</h2>
+              <br />
+              <h3> +91 8555034492</h3>
+              <h3> +91 9704442400</h3>
             </div>
           </li>
         </ul>
-        <ul className="cards__items_pricing">
+        {/* <ul className="cards__items_pricing">
           <li className="cards__item_text">
             <div style={{ margin: "auto", width: "80%" }}>
               <h1 style={{ textAlign: "left" }}> Contact Us </h1>
@@ -48,7 +60,7 @@ export default function About() {
               <h3> +91 9704442400</h3>
             </div>
           </li>
-        </ul>
+        </ul> */}
       </div>
 
       <Footer />
